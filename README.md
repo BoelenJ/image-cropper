@@ -88,8 +88,7 @@ All the other input properties can be handled either by hardcoding values in the
 
 The repository also contains a sample implementation solution file (unmanaged) that you can directly import in your environment. It contains a mobile form factor canvas app, the component and a dataverse table which stores the full and cropped images. See below for a small demo:
 
-
-
+https://github.com/BoelenJ/image-cropper/assets/117845677/8f754f1b-0a8a-4cda-86ef-f0caf154b219
 
 
 
