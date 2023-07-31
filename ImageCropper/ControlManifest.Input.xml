@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SampleNameSpace" constructor="ImageCropper" version="0.0.11" display-name-key="ImageCropper" description-key="ImageCropper description" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="Image" display-name-key="Image" description-key="The image to crop." of-type="Multiple" usage="bound" required="true" />
+    <property name="Border" display-name-key="Border" description-key="Border" of-type="Decimal" usage="bound" required="true" default-value="50" />
+    <property name="BorderRadius" display-name-key="Border Radius" description-key="Border Radius of the crop" of-type="Decimal" usage="bound" required="true" />
+    <property name="Zoom" display-name-key="Zoom Value" description-key="Zoom value between 1 and 3" of-type="Decimal" usage="bound" required="true" default-value="1"/>
+    <property name="Rotation" display-name-key="Rotation Value" description-key="Rotation value between 0 and 360" of-type="Whole.None" usage="bound" required="true" default-value="0"/>
+    <property name="ExtractImage" display-name-key="Extract Image" description-key="True if it needs to be extracted." of-type="TwoOptions" usage="bound" required="true" />
+    <property name="CroppedImage" display-name-key="Cropped Image" description-key="The cropped image in base64" of-type="Multiple" usage="output" required="true" />
+    <property name="State" display-name-key="State" description-key="The state of the component" of-type="SingleLine.Text" usage="output" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+    </resources>
+  </control>
+</manifest>
